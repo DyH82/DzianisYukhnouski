@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <H1 align="center">Заполните анкету</H1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="last_name" autofocus required placeholder="Фамилия" pattern="^[А-Яа-я]{,25}"><br>
+            <input type="text" name="name" required placeholder="Имя" pattern="^[А-Яа-я]{,20}"><br>
+            <input type="text" name="surname" required placeholder="Отчество" pattern="^[А-Яа-я]{,24}">
+                <fieldset>
+                    <legend>Паспортные данные</legend>
+                        <input type="text" size="1" name="seria" placeholder="AA" pattern="^[A-Z]{2,2}" required>
+                        <input type="text" size="5" name="num_Pass" placeholder="1234567" pattern="^[0-9]{7,7}" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Дата рождения</legend>
+                        <input type="text" size="4" name="year" pattern="\d{4}" placeholder="2000"> Год вашего рождения<br>
+                        <select name="month">
+                            <option value="jan">Январь</option>
+                            <option value="feb">Февраль</option>
+                            <option value="mar">Март</option>
+                            <option value="apr">Апрель</option>
+                            <option value="may">Май</option>
+                            <option value="jun">Июнь</option>
+                            <option value="jul">Июль</option>
+                            <option value="aug">Август</option>
+                            <option value="sep">Сентябрь</option>
+                            <option value="oct">Октябрь</option>
+                            <option value="nov">Ноябрь</option>
+                            <option value="dec">Декабрь</option>
+                        </select>
+                        Месяц рождения<br>
+                        <input type="number" min="1" max="31" step="1">
+                </fieldset>
+
+                <select name="citizen">
+                    <option value="BLR">РБ</option>
+                    <option value="RUS">РФ</option>
+                </select><br>Адрес:<br>
+                <textarea name="text_area" ></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Интересы</legend>
+            <fieldset>
+                <legend>Хобби</legend>
+                <label>
+                    <input type="checkbox" name="hobby" id="fish">Рыбалка
+                </label><br>
+                <label>
+                    <input type="checkbox" name="hobby" id="astro">Астрономия
+                </label><br>
+                <label>
+                    <input type="checkbox" name="hobby" id="diving">Дайвинг
+                </label><br>
+                <label>
+                    <input type="checkbox" name="hobby" id="snb">Сноуборд
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Домашние животные(можно выбрать несколько вариантов)</legend>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+        </fieldset>
+        <fieldset>
+            <legend>Координаты:</legend>
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления</legend>
+        </fieldset>
+    </form>
+</body>
+</html>
