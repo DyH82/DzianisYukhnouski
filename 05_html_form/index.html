@@ -64,7 +64,7 @@
                     <label for="login">Логин</label><br>
                     <input type="password" id="pass" name="password" required>*
                     <label for="pass">Пароль</label><br>
-                    <label><input type="checkbox" name="check" id="check1" cheked> Оставаться в системе </label><br>
+                    <label><input type="checkbox" name="check" id="check1" checked> Оставаться в системе </label><br>
                     <input type="submit" value="Войти"><br>
                     * - обязательное поле
                 </fieldset>
@@ -135,7 +135,7 @@
                     файл:<br>
                     <input type="file" name="file_field" dir="ltr"><br>
                     Срок хранения(года/лет):<br>
-                    <input type="number" name="year" pattern="[0-9]">
+                    <input type="number" name="year" size="3" pattern="[0-9]">
                     <input type="submit" value="загрузить">
                 </fieldset>
             </form>
@@ -146,7 +146,7 @@
                     <input type="text" name="text" placeholder="только русские буквы" pattern="^[а-яА-Я]+$"><br>
                     <i>Введите номер в формате<br>
                     +XXX-XX-XXXXXXX</i><br>
-                    <input type="tel" name="tel" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" placeholder="+375291234567"><br><!-- дает вводить больше цифр-->
+                    <input type="tel" name="tel" pattern="^(\+375)-(29|25|44|33)-(\d{3})(\d{2})(\d{2})$" placeholder="+375-29-1234567"><br><!-- дает вводить больше цифр-->
                     
                     <input type="submit" value="проверить">
                  </fieldset>
