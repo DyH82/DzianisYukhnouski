@@ -5,15 +5,24 @@ body {
 .nav_block {
     width: 15em;
     background-color: #CCCCCC;
-    
+    float: left;
 }
 
 .article {
-    /*width: 700px;*/
-    background-color: #AAAAAA;
+    width: auto;
     margin-bottom: .2em;
-    margin: 0;
-    float: right;
+    margin-top: 0;
+    float: left;
+}
+
+.article_1 {
+    margin-bottom: .2em;
+    background-color: #AAAAAA;
+}
+
+.article_2 {
+    margin-top: .2em;
+    background-color: #AAAAAA;
 }
 
 .pic {
@@ -23,5 +32,34 @@ body {
 .footer {
     
     background-color: #CCCCCC;
+    clear: both;
+}
+
+.menu1 {
+    width: 15em;
+    background-color: blue;
+    float: left; 
+}
+
+.cont1 {
+    margin: auto;
+    margin-bottom: .2em;
+    
+}
+
+.cont {
+    background-color: aqua;
+    margin-bottom: .2em;
+    
+}
+
+.cont2 {
+    background-color: yellow;
+    margin-bottom: .2em;
+    
+}
+
+.foot {
+    background-color: red;
     clear: both;
 }
