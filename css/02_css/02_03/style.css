@@ -1,27 +1,27 @@
 body {
-    width: 940px;
-}
-
-.main {
-    background-color: #DBDBDB; 
+     margin: 0;
 }
 
 .nav_block {
     width: 15em;
     background-color: #CCCCCC;
-    float: left;
+    
 }
 
 .article {
-    width: 700px;
+    /*width: 700px;*/
     background-color: #AAAAAA;
     margin-bottom: .2em;
+    margin: 0;
+    float: right;
+}
+
+.pic {
     float: right;
 }
 
 .footer {
-    width: auto;
-    height: auto;
+    
     background-color: #CCCCCC;
     clear: both;
 }
