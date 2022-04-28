@@ -35,19 +35,25 @@ body {
     clear: both;
 }
 
+.menu {
+    background-color: rgb(219 219 219);
+    width: 15em;
+    height: auto;
+    float: left;
+}
 .menu1 {
     width: 15em;
     background-color: blue;
-    float: left; 
+     
 }
 
-.cont1 {
+.cont {
     margin: auto;
     margin-bottom: .2em;
     
 }
 
-.cont {
+.cont1 {
     background-color: aqua;
     margin-bottom: .2em;
     
@@ -56,9 +62,18 @@ body {
 .cont2 {
     background-color: yellow;
     margin-bottom: .2em;
-    
+    margin-left: 15em;
+    display: inline-block;
+    float: left;
 }
 
+.image {
+    width: 128px;
+    height: 128px;
+    float: right;
+    display: inline;
+}
+ 
 .foot {
     background-color: red;
     clear: both;
