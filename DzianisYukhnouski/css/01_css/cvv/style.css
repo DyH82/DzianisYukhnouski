@@ -1,0 +1,18 @@
+
+body {
+    width: 880px;
+}
+
+div.head { 
+    text-align: right;
+   
+}
+
+div.main {
+    font-family: 'Bad Script', cursive;   
+}
+
+h2, p {
+    text-indent: 50px;
+    font-size: 19px;
+}
