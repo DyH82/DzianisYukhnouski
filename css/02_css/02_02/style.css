@@ -3,10 +3,7 @@
     background-color: black;
     color: green;
     overflow: auto;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: auto;
+    height: 74px;
 }
 
 .list {

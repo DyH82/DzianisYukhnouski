@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         .dropbtn {
     background-color: #d3d3d3;
-    color: rgb(0, 0, 0);
-    width: 150px;   
+    color: #9497a0;
+    width: 100px;   
     border-radius: 4px;
 }
 
@@ -24,7 +31,7 @@
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    width: 150px;
+    width: 100px;
     
 }
 
@@ -45,8 +52,14 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #818181;}
 
-@media (min-device-width: 936px) {
-    display: none;
+@media all (max-width: 621px) {
+    .dropbtn {
+        display: block;
+        width: 100%;
+        float: none;
+         
+        
+    }
 }
 
     </style>
