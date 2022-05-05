@@ -6,82 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .body {
+            width: 900px;
+        }
+
         .dropbtn {
-            background-color: beige;
+            background-color: #d3d3d3;
+            color: #9497a0;
+            width: 150px;   
             border-radius: 4px;
-            font-size: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            float: left;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
             width: 150px;           
         }
 
-                .dropdown {
-            position: relative;
-            display: inline-block;
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            border: solid 1px;
+            border-radius: 4px;
         }
 
-        .mon {
-            display: none;
-            position: absolute;
-            background-color: brown;
-            width: 150px;
+        .dropdown-content a:hover {
+            background-color: #818181;
         }
 
-        .dropdown:hover .dropdown-content {display: block;}
-        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #818181;
+        }
+
+        @media (max-width: 900px) {
+            .dropdown {              
+                width: 150%;
+                clear: both;  
+            }
+
+            .dropdown-content {
+                position: absolute;
+                left: 150px;
+                top: 0;
+                z-index: 1;               
+            }
+        }
+
     </style>
 </head>
 <body>
-    <div class="nav_menu">
-        <div class="dropdown">
-            <button class="dropbtn">Понедельник</button>
-            <div class="dropdown_cont">
-                <a href="#">Завтрак</a>
-                <a href="#">Обед</a>
-                <a href="#">Ужин</a>
-            </div>
+    <div class="dropdown">
+        <button class="dropbtn">Понедельник</button>
+        <div class="dropdown-content">
+          <a href="#">завтрак</a>
+          <a href="#">обед</a>
+          <a href="#">ужин</a>
         </div>
-        <div class="dropdown">
-            <button class="dropbtn">Вторник</button>
-            <div class="dropdown_cont">
-                <a href="#">Завтрак</a>
-                <a href="#">Обед</a>
-                <a href="#">Ужин</a>
-            </div>
-        </div>
-       <!-- <div class="tue">Вторник
-            <div class="dropdown">
-                <a href="#">Завтрак</a>
-                <a href="#">Обед</a>
-                <a href="#">Ужин</a>
-            </div>
-        </div>
-        <div class="wed">Среда
-            <div class="dropdown">
-                <a href="#">Завтрак</a>
-                <a href="#">Обед</a>
-                <a href="#">Ужин</a>
-            </div>
-        </div>
-        <div class="thue">Четверг
-            <div class="dropdown">
-                <a href="#">Завтрак</a>
-                <a href="#">Обед</a>
-                <a href="#">Ужин</a>
-            </div>
-        </div>
-        <div class="fry">Пятница
-            <div class="dropdown">
-                <a href="#">Завтрак</a>
-                <a href="#">Обед</a>
-                <a href="#">Ужин</a>
-            </div>
-        </div>
-        <div class="wed">Суббота
-            <div class="dropdown">
-                <a href="#">Завтрак</a>
-                <a href="#">Обед</a>
-                <a href="#">Ужин</a>
-            </div>
-        </div>-->
     </div>
+    <div class="dropdown">
+        <button class="dropbtn">Вторник</button>
+        <div class="dropdown-content">
+          <a href="#">завтрак</a>
+          <a href="#">обед</a>
+          <a href="#">ужин</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Среда</button>
+        <div class="dropdown-content">
+          <a href="#">завтрак</a>
+          <a href="#">обед</a>
+          <a href="#">ужин</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Четверг</button>
+        <div class="dropdown-content">
+          <a href="#">завтрак</a>
+          <a href="#">обед</a>
+          <a href="#">ужин</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Пятница</button>
+        <div class="dropdown-content">
+          <a href="#">завтрак</a>
+          <a href="#">обед</a>
+          <a href="#">ужин</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Суббота</button>
+        <div class="dropdown-content">
+          <a href="#">завтрак</a>
+          <a href="#">обед</a>
+          <a href="#">ужин</a>
+        </div>
+    </div>
+      
 </body>
 </html>
