@@ -9,10 +9,37 @@
     <style> 
     /*rgb(211 211 211)rgb(128 128 128)*/
         table {
-            width: 50%;
-            border-collapse: collapse;
+            width: 100%;           
+        }
+
+        tr {
+            height: 10px;
         }
   
+        thead tr {
+            background-color: rgb(128 128 128);
+        }
+        tbody tr:nth-child(odd){
+            background-color: #eee;
+            text-align: left;
+        }
+        tbody tr:nth-child(even) {
+            background-color: rgb(211 211 211);
+            text-align: left;
+        }
+        tbody tr, tbody th, tbody td {
+            border-bottom-style: dotted;
+            border-right-style: dotted;
+        }
+        tbody tr td:last-child {
+            border-right: none;
+        }
+        tbody tr:hover {
+            background-color: rgb(109, 236, 100);
+        }
+        tfoot td {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -69,6 +96,12 @@
                 <td>98456</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
+            </tr>
+        </tfoot>
     </table>
+    
 </body>
 </html>
