@@ -6,50 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .dropdown {
-            position: relative;
-            float: left;
+
+        .dropdown-content a:hover {
+            background-color: #818181;
         }
-        .dropbtn {
+        .dropdown:hover .dropbtn {
+            background-color: #818181;
+        }
+
+        .dropdown .dropbtn {
+            float: left;
             background-color: #d3d3d3;
             color: #9497a0;
             width: 150px;   
             border-radius: 4px;
         }
 
-        .dropdown-content {
-            display: none;
+        .dropdown-content a {
+            display: block;
+            color: black;
+            text-decoration: none;  
+            border: 1px solid;
+            border-radius: 4px;
+            
+        }
+
+        .dropdown .dropbtn .dropdown-content {   
             position: absolute;
             background-color: #f1f1f1;
-            width: 150px;           
+            width: 150px;       
+            opacity: 0;
+            visibility: hidden;
+            transition: 2s;               
         }
 
-        .dropdown-content a {
-            color: black;
-            text-decoration: none;
-            display: block;
-            border: solid 1px;
-            border-radius: 4px;
+        .dropdown .dropbtn:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
         }
 
-        .dropdown-content a:hover {
-            background-color: #818181;
-        }
+        
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: #818181;
-        }
-
+      
         @media (max-width: 900px) {
             .dropdown {              
                 width: 150%;
@@ -63,58 +66,62 @@
                 z-index: 1;               
             }
         }
-
     </style>
 </head>
 <body>
     <div class="dropdown">
-        <button class="dropbtn">Понедельник</button>
-        <div class="dropdown-content">
-          <a href="#">завтрак</a>
-          <a href="#">обед</a>
-          <a href="#">ужин</a>
-        </div>
+        <button class="dropbtn">Понедельник
+            <div class="dropdown-content">
+                <a href="#">завтрак</a>
+                <a href="#">обед</a>
+                <a href="#">ужин</a>
+            </div>
+        </button>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Вторник</button>
+        <button class="dropbtn">Вторник
         <div class="dropdown-content">
           <a href="#">завтрак</a>
           <a href="#">обед</a>
           <a href="#">ужин</a>
         </div>
+    </button>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Среда</button>
+        <button class="dropbtn">Среда
         <div class="dropdown-content">
           <a href="#">завтрак</a>
           <a href="#">обед</a>
           <a href="#">ужин</a>
         </div>
+    </button>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Четверг</button>
+        <button class="dropbtn">Четверг
         <div class="dropdown-content">
           <a href="#">завтрак</a>
           <a href="#">обед</a>
           <a href="#">ужин</a>
         </div>
+    </button>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Пятница</button>
+        <button class="dropbtn">Пятница
         <div class="dropdown-content">
           <a href="#">завтрак</a>
           <a href="#">обед</a>
           <a href="#">ужин</a>
         </div>
+    </button>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Суббота</button>
+        <button class="dropbtn">Суббота
         <div class="dropdown-content">
           <a href="#">завтрак</a>
           <a href="#">обед</a>
           <a href="#">ужин</a>
         </div>
+    </button>
     </div>
-      
 </body>
 </html>
