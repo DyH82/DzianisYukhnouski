@@ -54,18 +54,21 @@
 
       
         @media (max-width: 900px) {
+            
             .dropdown {              
-                width: 150%;
+                width: 150px;
                 clear: both;  
             }
 
-            .dropdown-content {
+            .dropbtn ~ .dropdown-content {
+                float: left;
                 position: absolute;
                 left: 150px;
                 top: 0;
-                z-index: 1;               
+                z-index: 1;  
+            }             
             }
-        }
+        
     </style>
 </head>
 <body>
@@ -80,21 +83,21 @@
     </div>
     <div class="dropdown">
         <button class="dropbtn">Вторник
-        <div class="dropdown-content">
-          <a href="#">завтрак</a>
-          <a href="#">обед</a>
-          <a href="#">ужин</a>
-        </div>
-    </button>
+            <div class="dropdown-content">
+                <a href="#">завтрак</a>
+                <a href="#">обед</a>
+                <a href="#">ужин</a>
+            </div>
+        </button>
     </div>
     <div class="dropdown">
         <button class="dropbtn">Среда
-        <div class="dropdown-content">
-          <a href="#">завтрак</a>
-          <a href="#">обед</a>
-          <a href="#">ужин</a>
-        </div>
-    </button>
+            <div class="dropdown-content">
+                <a href="#">завтрак</a>
+                <a href="#">обед</a>
+                <a href="#">ужин</a>
+            </div>
+        </button>
     </div>
     <div class="dropdown">
         <button class="dropbtn">Четверг
@@ -123,5 +126,6 @@
         </div>
     </button>
     </div>
+
 </body>
 </html>
