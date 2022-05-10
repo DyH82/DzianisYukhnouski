@@ -42,7 +42,7 @@
             width: 150px;       
             opacity: 0;
             visibility: hidden;
-            transition: 2s;               
+            transition: .2s;               
         }
 
         .dropdown .dropbtn:hover .dropdown-content {
@@ -60,7 +60,10 @@
                 clear: both;  
             }
 
-            .dropbtn ~ .dropdown-content {
+            /*.dropbtn:hover ~ .dropdown-content {*/
+                .dropdown .dropbtn:hover .dropdown-content {
+                opacity: 1;
+                visibility: visible;
                 float: left;
                 position: absolute;
                 left: 150px;
